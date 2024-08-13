@@ -13,6 +13,9 @@
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
+&lt {
+    quick-tap-ms = <200>;
+};
 
 / {
     behaviors {
@@ -24,10 +27,6 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-        };
-
-        &lt {
-            tapping-term-ms = <200>;
         };
 
     };
